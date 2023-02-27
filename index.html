@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1 class="pageTitle">Make Up Catalog</h1>
+
+    <div id="opcoes">
+      <form class="optionContent">
+        <label for="name">Nome:</label>
+        <input id="name" type="text" name="name" />
+        <input id="send" type="submit" value="enviar" />
+      </form>
+      <div class="optionContent">
+        <label for="brand">Marca:</label>
+        <select id="brand">
+          <option class="option" value="todos">Todos</option>
+        </select>
+      </div>
+      <div class="optionContent">
+        <label for="type">Tipo:</label>
+        <select id="type">
+          <option class="option" value="todos">Todos</option>
+          <option id="optionABC" class="option" value="deAaZ">De A-Z</option>
+          <option id="optionABC" class="option" value="deZaA">De Z-A</option>
+          <option id="optionABC" class="option" value="maioresPrecos">
+            Maiores Preços
+          </option>
+          <option id="optionABC" class="option" value="menoresPrecos">
+            Menores Preços
+          </option>
+        </select>
+      </div>
+      <div class="optionContent">
+        <select id="bestProduct">
+          <option class="option" value="">Todos os produtos</option>
+          <option class="option" value="Melhor Avaliados">
+            Melhor Avaliados
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div>
+      <section id="product" class="products"></section>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
